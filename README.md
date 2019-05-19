@@ -8,7 +8,7 @@
 
 ## Para as questões 1, 2 e 3 basta acessar a raiz do projeto no navegador e clicar no arquivo
 
-## Utilização via curl para a Questão 4
+## Utilização via curl para a Questão 4 - substitua "seuhost" pelo endereço
 
 `curl -v -X OPTIONS seuhost/testeBdr/tarefas -H 'Content-Type:application/json'`
 
