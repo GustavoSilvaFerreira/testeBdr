@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteRule ^/?([a-zA-Z_]+)/([a-zA-Z_]+)/([0-9]+)$ questaoQuatro/web.php?metodo=$1&arg1=$2&arg2=$3 [L]
+RewriteRule ^/?([a-zA-Z_]+)/([0-9]+)$ questaoQuatro/web.php?metodo=$1&arg1=$2 [L]
+RewriteRule ^/?([a-zA-Z_]+)$ questaoQuatro/web.php?metodo=$1 [L,QSA]
+
+

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        
+        <title>Teste bdr - Tarefas</title>
+    </head>
+    <body>
+        <div class="container-fluid">
+            
+            <h1>Tarefas</h1>
+            
+            <div class="table-responsive">
+                <table class="table table-sm">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Tarefa</th>
+                            <th>Descrição</th>
+                            <th>Pioridade</th>
+                            <th class="text-right"><button type="button" class="btn btn-primary BtnCadastrar" data-toggle="modal" data-target="#cadastrar">Nova tarefa</button></th>
+                        </tr>
+                    </thead>
+                    <tbody id="listarTarefas">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <div id="cadastrar" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>Nova tarefa</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                    
+                        <div class="form-group">
+                            <label class="control-label" for="titulo">Título</label>
+                            <div class="controls">
+                                <input type="text" id="titulo" class="form-control" name="titulo" placeholder="Título">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="control-label" for="descricao">Descrição</label>
+                            <div class="controls">
+                                <input type="text" id="descricao" class="form-control" name="descricao" placeholder="Descrição">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="control-label" for="prioridade">Prioridade</label>
+                            <div class="controls">
+                                <input type="number" id="prioridade" class="form-control" name="prioridade" placeholder="Prioridade">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-footer">
+                        <input type="button" class="btn btn-primary cadastrarTarefa" value="Salvar &raquo"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="alterar" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>Alterar</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    </div>
+                    <div class="modal-body alterarBody">
+                    
+                        <div class="form-group">
+                            <label class="control-label" for="tituloAlterar">Título</label>
+                            <div class="controls">
+                                <input type="text" id="tituloAlterar" class="form-control" name="titulo" placeholder="Título">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="control-label" for="descricaoAlterar">Descrição</label>
+                            <div class="controls">
+                                <input type="text" id="descricaoAlterar" class="form-control" name="descricao" placeholder="Descrição">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="control-label" for="prioridadeAlterar">Prioridade</label>
+                            <div class="controls">
+                                <input type="number" id="prioridadeAlterar" class="form-control" name="prioridade" placeholder="Prioridade">
+                            </div>
+                        </div>
+                        
+                        <input type="hidden" id="idTarefa" name="id" />
+                    </div>
+                    
+                    <div class="modal-footer">
+                        <input type="button" class="btn btn-primary salvarAlteracao" value="Salvar &raquo"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
