@@ -2,7 +2,7 @@
 
 ### Como rodar
 
-* Adicione o projeto no servidor, dentro de um diretorio com mome `testeBdr`
+* Adicione o projeto no servidor, dentro de um diretorio com nome `testeBdr`
 * Crie o banco de dados com o arquivo db.sql incluso no projeto
 * Configure o banco de dados nos arquivos `questaoTresDataBaseConnection.php` e `questaoQuatro/model/Connect.php`
 
